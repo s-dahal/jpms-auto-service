@@ -13,12 +13,11 @@
     <artifactId>auto-service</artifactId>
     <packaging>jar</packaging>
     <name>Auto service</name>
-    <version>${core.artifact.version}-${core.artifact.release}</version>
+    <version>1.1.1-r1</version>
 
     <properties>
         <!-- change release here-->
-        <core.artifact.version>1.0.1</core.artifact.version>
-        <core.artifact.release>r7</core.artifact.release>
+        <core.artifact.version>1.1.1</core.artifact.version>
 
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
