@@ -7,7 +7,8 @@
 <!-- ====================================================================== -->
 <!-- ====================================================================== -->
 <!--                                                                        -->
-<!-- Effective POM for project 'dev.ikm.jpms:auto-service:jar:1.1.1-r1'     -->
+<!-- Effective POM for project                                              -->
+<!-- 'dev.ikm.jpms:auto-service:jar:1.1.1-r1-SNAPSHOT'                      -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -20,7 +21,7 @@
   </parent>
   <groupId>dev.ikm.jpms</groupId>
   <artifactId>auto-service</artifactId>
-  <version>1.1.1-r1</version>
+  <version>1.1.1-r1-SNAPSHOT</version>
   <name>Auto service</name>
   <description>The General Parent that helps to define the build processes that should be used across projects, regardless of.
         Package type. This is versioned and if you want to use a different version of the pom, you can simply change
@@ -54,6 +55,7 @@
   </issueManagement>
   <properties>
     <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
+    <core.artifact.release>r1</core.artifact.release>
     <core.artifact.version>1.1.1</core.artifact.version>
     <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
     <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
@@ -130,7 +132,7 @@
       </testResource>
     </testResources>
     <directory>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target</directory>
-    <finalName>auto-service-1.1.1-r1</finalName>
+    <finalName>auto-service-1.1.1-r1-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -421,7 +423,7 @@
             <configuration>
               <target>
                 <echo message="renaming sources file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/dependency/auto-service-annotations-1.1.1-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/auto-service-1.1.1-r1-sources.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/dependency/auto-service-annotations-1.1.1-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/auto-service-1.1.1-r1-SNAPSHOT-sources.jar" />
               </target>
             </configuration>
           </execution>
@@ -434,7 +436,7 @@
             <configuration>
               <target>
                 <echo message="renaming javadoc file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/dependency/auto-service-annotations-1.1.1-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/auto-service-1.1.1-r1-javadoc.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/dependency/auto-service-annotations-1.1.1-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/auto-service-1.1.1-r1-SNAPSHOT-javadoc.jar" />
               </target>
             </configuration>
           </execution>
