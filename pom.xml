@@ -13,7 +13,7 @@
     <artifactId>auto-service</artifactId>
     <packaging>jar</packaging>
     <name>Auto service</name>
-    <version>1.1.1-r2-AR-299_Java23-SNAPSHOT</version>
+    <version>1.1.1-r2-SNAPSHOT</version>
 
     <properties>
         <!-- change release here-->
