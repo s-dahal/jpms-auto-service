@@ -23,7 +23,7 @@ Add the following dependency to your pom.xml:
 
 Add the following dependency to your build.gradle:
 ```groovy
-implementation 'dev.ikm.jpms:antlr4-runtime:${latest-jpms-auto-service-version}'
+implementation 'dev.ikm.jpms:auto-servicee:${latest-jpms-auto-service-version}'
 ```
 
 In your module descriptor (module-info.java), declare the dependency on the jpms-auto-service module:
