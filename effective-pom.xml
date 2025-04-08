@@ -8,7 +8,7 @@
 <!-- ====================================================================== -->
 <!--                                                                        -->
 <!-- Effective POM for project                                              -->
-<!-- 'dev.ikm.jpms:auto-service:jar:1.1.1-r2-SNAPSHOT'                      -->
+<!-- 'dev.ikm.jpms:auto-service:jar:1.1.1-r3-SNAPSHOT'                      -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -16,12 +16,12 @@
   <parent>
     <groupId>dev.ikm.build</groupId>
     <artifactId>parent</artifactId>
-    <version>1.57.0</version>
+    <version>1.58.0</version>
     <relativePath />
   </parent>
   <groupId>dev.ikm.jpms</groupId>
   <artifactId>auto-service</artifactId>
-  <version>1.1.1-r2-SNAPSHOT</version>
+  <version>1.1.1-r3-SNAPSHOT</version>
   <name>Auto service</name>
   <description>The General Parent that helps to define the build processes that should be used across projects, regardless of.
         Package type. This is versioned and if you want to use a different version of the pom, you can simply change
@@ -55,8 +55,9 @@
   </issueManagement>
   <properties>
     <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
-    <core.artifact.release>r2</core.artifact.release>
+    <core.artifact.release>r3</core.artifact.release>
     <core.artifact.version>1.1.1</core.artifact.version>
+    <java.version>23</java.version>
     <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
     <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     <maven-license-plugin.version>4.1</maven-license-plugin.version>
@@ -79,6 +80,7 @@
     <maven.project-info-reports-plugin.version>3.8.0</maven.project-info-reports-plugin.version>
     <maven.site.plugin>3.21.0</maven.site.plugin>
     <maven.sonarqube.version>5.0.0.4389</maven.sonarqube.version>
+    <maven.version>3.9.9</maven.version>
     <maven.versions.plugin>2.18.0</maven.versions.plugin>
     <maven.wrapper-plugin.version>3.3.2</maven.wrapper-plugin.version>
     <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
@@ -132,7 +134,7 @@
       </testResource>
     </testResources>
     <directory>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target</directory>
-    <finalName>auto-service-1.1.1-r2-SNAPSHOT</finalName>
+    <finalName>auto-service-1.1.1-r3-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -152,6 +154,19 @@
                 </rules>
               </configuration>
             </execution>
+            <execution>
+              <id>enforce-java</id>
+              <goals>
+                <goal>enforce</goal>
+              </goals>
+              <configuration>
+                <rules>
+                  <requireJavaVersion>
+                    <version>23</version>
+                  </requireJavaVersion>
+                </rules>
+              </configuration>
+            </execution>
           </executions>
         </plugin>
         <plugin>
@@ -166,7 +181,11 @@
               </ignoreVersion>
               <ignoreVersion>
                 <type>regex</type>
-                <version>.+-M.+</version>
+                <version>.+-(M|m).+</version>
+              </ignoreVersion>
+              <ignoreVersion>
+                <type>regex</type>
+                <version>.+-(RC|rc).+</version>
               </ignoreVersion>
               <ignoreVersion>
                 <type>regex</type>
@@ -423,7 +442,7 @@
             <configuration>
               <target>
                 <echo message="renaming sources file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/dependency/auto-service-annotations-1.1.1-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/auto-service-1.1.1-r2-SNAPSHOT-sources.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/dependency/auto-service-annotations-1.1.1-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/auto-service-1.1.1-r3-SNAPSHOT-sources.jar" />
               </target>
             </configuration>
           </execution>
@@ -436,7 +455,7 @@
             <configuration>
               <target>
                 <echo message="renaming javadoc file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/dependency/auto-service-annotations-1.1.1-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/auto-service-1.1.1-r2-SNAPSHOT-javadoc.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/dependency/auto-service-annotations-1.1.1-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-auto-service\target/auto-service-1.1.1-r3-SNAPSHOT-javadoc.jar" />
               </target>
             </configuration>
           </execution>
