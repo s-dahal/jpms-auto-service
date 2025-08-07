@@ -16,6 +16,7 @@
     <version>1.1.1-r4-SNAPSHOT</version>
 
     <properties>
+        <java.version>24</java.version>
         <!-- change release here-->
         <core.artifact.version>1.1.1</core.artifact.version>
         <core.artifact.release>r4</core.artifact.release>
